@@ -116,6 +116,13 @@ header {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+
+.hero .animate-text.delay-1 div {
+  font-size: 1.8rem;  /* Smaller roles */
+  font-weight: 400;
+  margin: 0.3rem 0;
+}
+
 .btn {
   background: var(--primary-color);
   color: var(--bg-color);
@@ -391,3 +398,4 @@ footer {
     display: flex;
   }
 }
+
