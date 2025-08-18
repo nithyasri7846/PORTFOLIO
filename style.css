@@ -93,7 +93,7 @@ header {
 }
 
 /* Hero Section with Enhanced Gradient */
-.hero {
+/*.hero {
   height: 100vh;
   background: linear-gradient(135deg, #2c2c2c, #1a1a1a, #141414);
   display: flex;
@@ -119,9 +119,43 @@ header {
 
 .hero .animate-text.delay-1 div {
   font-size: 1.8rem;  /* Smaller roles */
+  /*font-weight: 400;
+  margin: 0.3rem 0;
+} */
+
+/* Hero Section with Enhanced Gradient */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a, #141414);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+  font-size: 5rem; /* base size for large screens */
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;  /* Desktop default */
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero .animate-text.delay-1 div {
+  font-size: 1.8rem;  /* Smaller roles */
   font-weight: 400;
   margin: 0.3rem 0;
 }
+
 
 .btn {
   background: var(--primary-color);
@@ -353,8 +387,33 @@ footer {
   }
 }
 
+/* ✅ Responsive Fixes */
+@media (max-width: 1024px) {  /* Laptop / tablets */
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1.5rem;
+  }
+  .hero .animate-text.delay-1 div {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {  /* Mobile */
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  .hero .animate-text.delay-1 div {
+    font-size: 1rem;
+  }
+}
+
 /* Responsive Styles */
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {
   .navbar {
     padding: 1rem 1.5rem;
   }
@@ -373,7 +432,7 @@ footer {
   .hero p {
     font-size: 1.1rem;
   }
-}
+}*/
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
@@ -397,7 +456,7 @@ footer {
   .nav-links.active {
     display: flex;
   }
-}, how to change the hero seciton font size "/* Hero Section with Enhanced Gradient */
+}/* Hero Section with Enhanced Gradient */
 .hero {
   height: 100vh;
   background: linear-gradient(135deg, #2c2c2c, #1a1a1a, #141414);
@@ -459,4 +518,5 @@ footer {
   color: var(--primary-color);
   transform: scale(1.1);
 }
+
 
